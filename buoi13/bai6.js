@@ -32,4 +32,6 @@ account("deposit", 50000);
 account("withdraw", 30000);
 console.log(account("balance")); // 120000
 account("history");
+console.log(account("history"));
+
 account("withdraw", 999999); // phải báo lỗi "Insufficient balance", không cho rút âm
