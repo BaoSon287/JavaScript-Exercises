@@ -9,7 +9,7 @@ const fetchProducts = () => {
 const fetchUser = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            reject(new Error("Không thể lấy thông tin user"));
+            reject("Không thể lấy thông tin user");
         }, 1500);
     });
 };
@@ -27,10 +27,10 @@ Promise.all([
     fetchSettings()
 ])
     .then((results) => {
-        console.log("Tất cả thành công:", results);
+        console.log(results);
     })
     .catch((error) => {
-        console.log("Có lỗi:", error.message);
+        console.log(error);
     });
 Promise.allSettled([
     fetchProducts(),
