@@ -1,13 +1,16 @@
-const arr = [3, 7, 2, 9, 9, 5];
-let max1 = arr[0];
-let max2 = arr[0];
-arr.forEach(num => {
-    if (max1 < num) {
-        max2 = max1;
-        max1 = num;
+const compareArray = (arr1, arr2) => {
+    if (arr1.length != arr2.length) {
+        return false;
     }
-    else {
-        if (max2 < num && num !== max1) max2 = num;
+    if(arr1.i)
+    if (arr1[index] !== arr2[index]) {
+        return false;
     }
-});
-console.log(max2);
+    // } // return true;
+    return arri.every((item, index) => {
+        return item === arr2[index];
+    })
+}
+const arr1 = ['Item 1', 'Item 2', 1, false, ['An']];
+const arr2 = ['Item 1', 'Item 2', 1, false, ['An']];
+console.log(compareArray(arr1, arr2));
